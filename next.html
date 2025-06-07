@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>somma's photo collage</title>
+    <style>
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .photo-box {
+            position: relative;
+            width: 32%;
+        }
+
+        .photo-box img,
+        .photo-box video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .photo-text {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 14px;
+            background-color: blue;
+        }
+           </style>
+</head>
+<body>
+    <h1 style="text-align:center;">My photo's collage</h1>
+
+    <div class="collage">
+        <div class="photo-box">
+            <img src="somma1.jpg" alt="Photo 1">
+            <div class="photo-text">This is when I'm happy</div>
+        </div>
+        <div class="photo-box">
+            <img src="somma2.jpg" alt="Photo 2">
+            <div class="photo-text">This is when I'm trying to be serious</div>
+        </div>
+        <div class="photo-box">
+            <img src="somma3.jpg" alt="Photo 3">
+            <div class="photo-text">When I'm playful</div>
+        </div>
+        <div class="photo-box">
+            <!-- Replaced image with a video -->
+            <video controls>
+                <source src="somma-tape.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="photo-text">My birthday</div>
+        </div>
+        <div class="photo-box">
+            <img src="somma.jpg" alt="Photo 5">
+            <div class="photo-text">Bored</div>
+        </div>
+        <div class="photo-box">
+            <img src="somma4.jpg" alt="Photo 6">
+            <div class="photo-text">Just freshed up</div>
+        </div>
+    </div>
+</body>
+</html>
